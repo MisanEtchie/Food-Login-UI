@@ -36,8 +36,9 @@ class ForgotPassword extends StatelessWidget {
                       padding: EdgeInsets.symmetric(vertical: 24.0),
                       width: size.width * 0.8,
                       child: Text(
-                        "Please enter your email adress, we will send instruction to reset your password",
-                        style: kBodyText,
+                        "Please enter your email adress, we will send instructions to reset your password",
+                        style: zBodyText,
+                        textAlign: TextAlign.justify,
                       ),
                     ),
                     TextInputField(

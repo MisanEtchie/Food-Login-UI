@@ -31,31 +31,32 @@ class LoginScreen extends StatelessWidget {
                       ),
                       child: RichText(
                         text: TextSpan(
-                            style: TextStyle(
-                                fontSize: 60,
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold),
-                            children: [
-                              TextSpan(
-                                text: 'Recipes',
-                                style: TextStyle(fontSize: 50),
+                          style: TextStyle(
+                              fontSize: 60,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold),
+                          children: [
+                            TextSpan(
+                              text: 'Recipes',
+                              style: TextStyle(fontSize: 50),
+                            ),
+                            TextSpan(
+                              text: ' by',
+                              style: TextStyle(
+                                color: Color(0xFF6fffe9),
+                                fontSize: 50,
                               ),
-                              TextSpan(
-                                text: ' by',
-                                style: TextStyle(
-                                  color: Color(0xFF6fffe9),
-                                  fontSize: 50,
-                                ),
+                            ),
+                            TextSpan(text: ' Misan'),
+                            TextSpan(
+                              text: '.',
+                              style: TextStyle(
+                                color: Color(0xFF6fffe9),
+                                fontSize: 50,
                               ),
-                              TextSpan(text: ' Misan'),
-                              TextSpan(
-                                text: '.',
-                                style: TextStyle(
-                                  color: Color(0xFF6fffe9),
-                                  fontSize: 50,
-                                ),
-                              )
-                            ]),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ),
@@ -96,16 +97,19 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-                Container(
-                  child: Text(
-                    'Create New Account',
-                    style: tBodyText,
-                  ),
-                  decoration: BoxDecoration(
-                    border: Border(
-                      bottom: BorderSide(
-                        width: 1,
-                        color: kWhite,
+                GestureDetector(
+                  onTap: () => Navigator.pushNamed(context, 'CreateNewAccount'),
+                  child: Container(
+                    child: Text(
+                      'Create New Account',
+                      style: tBodyText,
+                    ),
+                    decoration: BoxDecoration(
+                      border: Border(
+                        bottom: BorderSide(
+                          width: 1,
+                          color: kWhite,
+                        ),
                       ),
                     ),
                   ),

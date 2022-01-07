@@ -10,5 +10,8 @@ const TextStyle mBodyText =
 const TextStyle tBodyText =
     TextStyle(fontSize: 16, color: Colors.white, height: 1.5);
 
+const TextStyle zBodyText =
+    TextStyle(fontSize: 18, color: Colors.white, height: 1.5);
+
 const Color kWhite = Colors.white;
 const Color kBlue = Color(0xff6fffe9);

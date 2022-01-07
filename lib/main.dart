@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/create-new-account.dart';
 import 'screens/forgot-password.dart';
 import 'screens/screens.dart';
 
@@ -23,6 +24,7 @@ class HomePage extends StatelessWidget {
       routes: {
         '/': (context) => LoginScreen(),
         'ForgotPassword': (context) => ForgotPassword(),
+        'CreateNewAccount': (context) => CreateNewAccount(),
       },
     );
   }
