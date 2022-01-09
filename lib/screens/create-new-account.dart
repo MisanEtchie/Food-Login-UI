@@ -15,7 +15,7 @@ class CreateNewAccount extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Stack(
       children: [
-        Backgroundimage(image: 'assets/images/pexels-lucas-guizo-4060347.jpg'),
+        Backgroundimage(image: 'assets/images/pexels-askar-abayev-5638268.jpg'),
         Scaffold(
           backgroundColor: Colors.transparent,
           body: SafeArea(
@@ -102,9 +102,12 @@ class CreateNewAccount extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(
-                            "Already have an account?  ",
-                            style: tBodyText,
+                          Padding(
+                            padding: const EdgeInsets.only(right: 8.0),
+                            child: Text(
+                              "Already have an account?",
+                              style: tBodyText,
+                            ),
                           ),
                           GestureDetector(
                             onTap: () {

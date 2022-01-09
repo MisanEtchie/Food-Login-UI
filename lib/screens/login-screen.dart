@@ -102,7 +102,9 @@ class LoginScreen extends StatelessWidget {
                   child: Container(
                     child: Text(
                       'Create New Account',
-                      style: tBodyText,
+                      style: tBodyText.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                     decoration: BoxDecoration(
                       border: Border(
